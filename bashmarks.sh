@@ -48,10 +48,11 @@ function s {
     fi
 }
 
-# jump to bookmark
+# jump to bookmark, then list its contents
 function g {
     source $SDIRS
     cd "$(eval $(echo echo $(echo \$DIR_$1)))"
+    ls
 }
 
 # print bookmark
